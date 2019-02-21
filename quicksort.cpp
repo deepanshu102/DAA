@@ -28,12 +28,6 @@ public:
 		if(initial<end)
 		{
 			int j=patition(arr,initial,end);
-			cout<<"\tJ1:-"<<j<<endl;
-			for(int i=initial;i<=end;i++)
-			{	
-				cout<<arr[i]<<"\t";
-			}
-			cout<<endl;
 			quicksort(arr,initial,j-1);
 			quicksort(arr,j+1,end);
 		}
