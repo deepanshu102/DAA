@@ -1,15 +1,18 @@
 echo "Insertion Sort"
-c++ insertionsort_final.cpp
+c++ 1*final.cpp
 ./a.out
 echo "SELECTION SORT"
-c++ selectionsort_final.cpp
+c++ 2*_final.cpp
 ./a.out
 echo "QUICK SORT"
-c++ quick*_final.cpp
+c++ 3*_final.cpp
 ./a.out
 echo "Merge Sort"
-c++ Mer*_final.cpp
+c++ 3*_final.cpp
+./a.out
+echo "Binnary Search "
+c++ 5*_final.cpp
 ./a.out
 echo "MATRIX CHAIN MULTIPLICATION"
-c++ mat*_final.cpp
+c++ 6*_final.cpp
 ./a.out
