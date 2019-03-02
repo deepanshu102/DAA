@@ -1,0 +1,15 @@
+echo "Insertion Sort"
+c++ insertionsort_final.cpp
+./a.out
+echo "SELECTION SORT"
+c++ selectionsort_final.cpp
+./a.out
+echo "QUICK SORT"
+c++ quick*_final.cpp
+./a.out
+echo "Merge Sort"
+c++ Mer*_final.cpp
+./a.out
+echo "MATRIX CHAIN MULTIPLICATION"
+c++ mat*_final.cpp
+./a.out
