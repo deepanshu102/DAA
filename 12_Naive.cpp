@@ -41,7 +41,7 @@ class Native
 				}
 				if(j==m & count==m)
 				{
-					break;
+						cout<<"Start:-"<<shift<<"\tend:-"<<shit+m;<<endl;
 				}
 			}
 			if(count==m)
@@ -50,20 +50,10 @@ class Native
 			}		
 			return 0;
 		}
-		void test()
-		{
-			int i,j;
-			cin>>i>>j;
-			for(;i<j;i++)
-			{
-				cout<<t[i];
-			}
-		}
+		
 };
 int main()
 {
 	Native obj;
 	obj.search();
-	obj.test();
 }
-
