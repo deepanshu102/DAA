@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#define d 256
 using namespace std;
 class RabinKharp
 {
@@ -25,45 +26,40 @@ class RabinKharp
 	void Search()
 		{
 			int t_l=t.length(),p_l=p.length();
-			int flag=0,i;
-			int arr[t_l-p_l];
-			for(int i=0;i<t_l-p_l;i++)
+			int flag=0,i,j;
+			int p1=0,t1=0,q=101;
+			for(int i=0;i<p_l;i++)
 			{
-				arr[i]=i;
+				p1=(p1+p[i])%q;
+				t1=(t1+t[i])%q;
 			}
-			for(i=0;i<(t_l-p_l);i++)
+			for(i=0;i<=(t_l-p_l);i++)
 			{
-				flag=0;
-				if(t[arr[i]]==p[0])
-				{	flag++;
-					for(int j=1;j<p_l;j++)
+				j=0;	
+				if(t1==p1)
+				{
+					for(j=0;j<p_l;j++)
 					{
-						if(t[i+j]==p[j])
-						{
-							flag++;
-						}
-						else
+						if(t[i+j]!=p[j])
 							break;
 					}
 				}
-				if(flag==p_l)
-					cout<<arr[i];	
+				if(j==p_l)
+					cout<<"Found Patern Started from "<<i+1;	
+				if(i<t_l-p_l)
+				{
+					cout<<t1<<"\n";
+					t1=((t1-t[i])+t[i+p_l])%q;
+				}
+
 			}
 		
 		}
-		void test()
-		{
-			int i,j;
-			cin>>i>>j;
-			for(;i<j;i++)
-			{
-				cout<<t[i];
-			}
-		}
+	
 };
 int main()
 {
 	RabinKharp obj;
 	obj.Search();
-	obj.test();
+
 }
