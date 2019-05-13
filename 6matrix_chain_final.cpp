@@ -1,3 +1,7 @@
+/************************************************
+Q6. Matrix Chain Multiplication for 6 matrices
+*************************************************/
+
 #include<iostream>
 #define p 123456234567;
 using namespace std;
@@ -47,7 +51,7 @@ void optimal_Solution_Value(int n,int d[][2])
             for(k=i;k<j;k++)
             {
 		q=m[i][k]+m[k+1][j]+d[i][0]*d[k+1][0]*d[j][1];
-		cout<<q<<"\t"<<m[i][k]<<"\t"<<m[k+1][j]<<"\ti="<<i<<"\tj="<<j<<"\tk="<<k<<"\t "<<m[i][j]<<endl;                
+               
 		if(q<m[i][j])
                 {
                     m[i][j]=q;
@@ -64,5 +68,13 @@ cout<<endl;
 		cout<<m[i][j]<<"\t";
 	}
 	cout<<endl;
+   }
+   for(i=0;i<n;i++)
+   {
+     for(j=0;j<n;j++)
+	{
+		cout<<s[i][j]<<"\t";
+	}
+	cout<<"\n";
    }
 }

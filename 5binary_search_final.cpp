@@ -1,3 +1,6 @@
+/************************************************
+Q5. Binary search for worst and best case analysis
+*************************************************/
 #include<iostream>
 using namespace std;
 class BinarySearch
@@ -42,7 +45,7 @@ class BinarySearch
 		void search(int a[],int tar,int k)
 		{	int mid=k/2;
 			int left=0,right=k-1;
-			while(a[mid]!=tar)
+			while(a[mid]!=tar && (left<=right))
 			{
 				if(a[mid]>tar)
 				{
@@ -61,6 +64,10 @@ class BinarySearch
 			else
 			{
 				cout<<tar<<" is not found\n";
+			}
+			for(int i=0;i<k;i++)
+			{
+				cout<<a[i]<<"\t";
 			}
 		}
 	void swap(int &arr1,int &arr2)

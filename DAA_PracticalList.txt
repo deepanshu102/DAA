@@ -1,0 +1,14 @@
+Q1. Insertion sort for worst, best and avg case analysis 
+Q2. Selection sort for worst, best and avg case analysis
+Q3. Quick sort for worst and avg case analysis
+Q4. Merge sort for worst and avg case analysis
+Q5. Binary search for worst and best case analysis
+Q6. Matrix Chain Multiplication for 6 matrices
+Q7. Min Heap Sort implementation to create a heap from the given set of values 
+Q8. Radix sort to sort upto 4 digit numbers
+Q9. Dijkastra algorithm
+Q10. Prims or kruskal algorithm for Minimal Spanning Tree
+Q11. Huffman encoding scheme
+Q12. Naive string matching algorithm
+Q13. Rabin Karp string matching algorithm
+ 

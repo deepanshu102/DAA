@@ -1,3 +1,6 @@
+/***********************************************************
+Q12:Naive
+***********************************************************/
 #include<iostream>
 #include<limits>
 #include<vector>
@@ -41,7 +44,7 @@ class Native
 				}
 				if(j==m & count==m)
 				{
-						cout<<"Start:-"<<shift<<"\tend:-"<<shit+m;<<endl;
+						cout<<"Start:-"<<shift<<"\tend:-"<<shift+m<<endl;
 				}
 			}
 			if(count==m)

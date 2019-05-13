@@ -19,11 +19,11 @@ class HeapSort
 			int largest=lar;
 			int lff=2*lar+1;
 			int rff=2*lar+2;
-			if(lff<=size && a[lff]<a[largest])
+			if(lff<=size && a[lff]>a[largest])
 			{
 				largest=lff;
 			}
-			if(rff<=size && a[rff]<a[largest])
+			if(rff<=size && a[rff]>a[largest])
 			{
 				largest=rff;
 			}
@@ -46,7 +46,7 @@ class HeapSort
 				heapify(a,i,0);
 			
 			}*/
-			for(i=0;i<size;i++)
+			for(i=size-1;i>=0;i--)
 			{
 				cout<<a[i]<<"\t";
 			}

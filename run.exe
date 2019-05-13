@@ -1,18 +1,43 @@
+
 echo "Insertion Sort"
 c++ 1*final.cpp
 ./a.out
+echo"\n";
 echo "SELECTION SORT"
 c++ 2*_final.cpp
 ./a.out
+
 echo "QUICK SORT"
 c++ 3*_final.cpp
 ./a.out
 echo "Merge Sort"
-c++ 3*_final.cpp
+c++ 4*_final.cpp
 ./a.out
-echo "Binnary Search "
+
+echo "Binary Search "
 c++ 5*_final.cpp
 ./a.out
+
 echo "MATRIX CHAIN MULTIPLICATION"
 c++ 6*_final.cpp
+./a.out
+echo "Heap"
+c++ 7*.cpp
+./a.out
+
+echo "Radix Sort"
+c++ 8*.cpp
+./a.out
+
+echo "Dijakstra"
+gcc 9*.c
+./a.out
+echo "Kruskal"
+c++ 10*.cpp
+./a.out
+echo "Naive"
+c++ 12*.cpp
+./a.out
+echo "RabinKharp"
+c++ 13*_final.cpp
 ./a.out

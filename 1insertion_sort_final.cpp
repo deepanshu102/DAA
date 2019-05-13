@@ -1,4 +1,6 @@
-
+/************************************************
+Q1. Insertion sort for worst, best and avg case analysis
+*************************************************/
 #include<iostream>
 using namespace std;
 void insertion_sort()

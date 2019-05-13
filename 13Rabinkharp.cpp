@@ -1,3 +1,6 @@
+/****************************************************
+	q13:RabinKharp
+***************************************************/
 #include<iostream>
 #include<string>
 #define d 256
@@ -30,8 +33,8 @@ class RabinKharp
 			int p1=0,t1=0,q=101;
 			for(int i=0;i<p_l;i++)
 			{
-				p1=(p1+p[i])%q;
-				t1=(t1+t[i])%q;
+				p1=((p1+p[i]))%q;
+				t1=((t1+t[i]))%q;
 			}
 			for(i=0;i<=(t_l-p_l);i++)
 			{
@@ -45,11 +48,10 @@ class RabinKharp
 					}
 				}
 				if(j==p_l)
-					cout<<"Found Patern Started from "<<i+1;	
+					cout<<"Found Patern Started from "<<i+1<<endl;	
 				if(i<t_l-p_l)
 				{
-					cout<<t1<<"\n";
-					t1=((t1-t[i])+t[i+p_l])%q;
+									t1=((t1-t[i])+t[i+p_l])%q;
 				}
 
 			}

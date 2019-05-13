@@ -1,3 +1,6 @@
+/************************************************
+Q2. Selection sort for worst, best and avg case analysis
+*************************************************/
 #include<iostream>
 using namespace std;
 void Selection_Sort()

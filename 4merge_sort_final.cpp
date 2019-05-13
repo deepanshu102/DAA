@@ -1,3 +1,7 @@
+/************************************************
+Q4. Merge sort for worst and avg case analysis
+
+*************************************************/
 #include<iostream>
 using namespace std;
 class MergeSorting

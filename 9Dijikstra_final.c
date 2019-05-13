@@ -1,3 +1,6 @@
+/************************************************
+Q9. Dijkastra algorithm
+*************************************************/
 #include<stdio.h>
 #include<limits.h>
 #include<stdlib.h>
